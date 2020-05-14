@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/productListingFragment">
+
+    <fragment
+        android:id="@+id/productListingFragment"
+        android:name="com.pms.drugzx.ui.main.ProductListingFragment"
+        android:label="fragment_product_listing"
+        tools:layout="@layout/fragment_product_listing" >
+        <action
+            android:id="@+id/action_productListingFragment_to_selectedProductsFragment"
+            app:destination="@id/selectedProductsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.pms.drugzx.ui.main.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" >
+        <action
+            android:id="@+id/action_addProductFragment_to_productListingFragment"
+            app:destination="@id/productListingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.pms.drugzx.ui.main.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.pms.drugzx.ui.main.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_editAccountFragment"
+            app:destination="@id/editAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedProductsFragment"
+        android:name="com.pms.drugzx.ui.main.SelectedProductsFragment"
+        android:label="fragment_selected_products"
+        tools:layout="@layout/fragment_selected_products" >
+        <action
+            android:id="@+id/action_selectedProductsFragment_to_orderSummaryFragment"
+            app:destination="@id/customerDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.pms.drugzx.ui.main.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" />
+    <fragment
+        android:id="@+id/editAccountFragment"
+        android:name="com.pms.drugzx.ui.main.EditAccountFragment"
+        android:label="fragment_edit_account"
+        tools:layout="@layout/fragment_edit_account" />
+    <fragment
+        android:id="@+id/customerDetailsFragment"
+        android:name="com.pms.drugzx.ui.main.CustomerDetailsFragment"
+        android:label="fragment_customer_details"
+        tools:layout="@layout/fragment_customer_details" >
+        <action
+            android:id="@+id/action_customerDetailsFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
+</navigation>

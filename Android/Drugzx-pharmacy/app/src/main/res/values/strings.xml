@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DrugzX</string>
+    <string name="products">Products</string>
+    <string name="add">Add</string>
+    <string name="statistics">Statistics</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="proceed">Proceed</string>
+    <string name="customer_name">Customer Name :</string>
+    <string name="products_count">Products Count :</string>
+    <string name="tax_total">Tax Total :</string>
+    <string name="grand_total">Grand Total :</string>
+    <string name="finish">Finish</string>
+    <string name="order_summary">ORDER SUMMARY</string>
+    <string name="search_products">Search products</string>
+</resources>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/productListingFragment"
+          android:title="@string/products"
+    android:icon="@drawable/ic_products"/>
+
+    <item android:id="@+id/addProductFragment"
+          android:title="@string/add"
+          android:icon="@drawable/ic_nav_add"
+    />
+
+    <item android:id="@+id/statisticsFragment"
+          android:title="@string/statistics"
+          android:icon="@drawable/ic_nav_chart"/>
+
+    <item android:id="@+id/accountFragment"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account"/>
+
+
+</menu>
